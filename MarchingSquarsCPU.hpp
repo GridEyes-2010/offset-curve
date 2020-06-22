@@ -6,12 +6,6 @@
 #include <iostream>
 namespace FussenAlgo
 {
-	/* 
-	 * @brief 等值曲线提取算法，目前能够提取流行曲线
-	 * @detail 
-	 * @author
-	 * @date
-	 */
 	template<class TVert,class ftype>
 	class MarchingSquarsCPU
 	{
@@ -300,7 +294,7 @@ namespace FussenAlgo
 			int nid = -1;
 			std::vector<Coord> cpts;
 			int npts = edges.size() * 2;
-			//先对点进行Hash编码
+			//鍏堝鐐硅繘琛孒ash缂栫爜
 			cpts.resize(npts);
 			if (npts <= 0)
 				return;
